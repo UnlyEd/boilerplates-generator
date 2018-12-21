@@ -1,0 +1,15 @@
+{
+  "plugins": [
+    "source-map-support"
+  ],
+  "presets": [
+    [
+      "env",
+      {
+        "node": "8.10"
+      }
+    ],
+    "stage-3"
+  ]
+}
+

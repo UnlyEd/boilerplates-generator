@@ -1,0 +1,77 @@
+service: serverless-template
+
+frameworkVersion: "=1.30.3"
+
+plugins:
+  - serverless-webpack # Must be first, see https://github.com/99xt/serverless-dynamodb-local#using-with-serverless-offline-and-serverless-webpack-plugin
+#  - serverless-sentry # https://github.com/arabold/serverless-sentry-plugin
+  - '@jimdo/serverless-dotenv' # See https://github.com/Jimdo/serverless-dotenv
+  - serverless-offline
+#  - serverless-domain-manager # See https://github.com/amplify-education/serverless-domain-manager
+
+custom:
+  env: ${env:ENV, 'development'} # Defaults to "development" if not provided (see package.json scripts)
+  envs:
+    development:
+      profile: # XXX staging profile
+      memorySize: 128
+    staging:
+      profile: # XXX staging profile
+      memorySize: 128
+    production:
+      profile: # XXX production profile
+      memorySize: 128
+#  sentry:
+#    dsn: # url sentry
+#    organization: unly
+#    project: # project name
+#    authToken:  # XXX Duplicated in .sentryclirc and both must be updated accordingly
+#    release: # https://github.com/arabold/serverless-sentry-plugin#releases
+#      version: true
+#    filterLocal: false # We don't filter local errors because we want to help dev with additional debug information when working on localhost
+  serverless-offline:
+    port: 3000
+  webpack:
+    packager: 'yarn'
+    webpackConfig: ./webpack.config.js
+    # serverless-webpack configuration
+    # Enable auto-packing of external modules
+    includeModules: true
+#  customDomain:
+#    enabled: ${self:custom.envs.${self:custom.env}.domain.enabled}
+#    domainName: ${self:custom.envs.${self:custom.env}.domain.name}
+#    certificateName: ${self:custom.envs.${self:custom.env}.domain.certificateName}
+#    basePath: 'api' # This will be prefixed to all routes
+#    stage: ${self:provider.stage}
+#    createRoute53Record: true
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+  versionFunctions: false
+  memorySize: ${self:custom.envs.${self:provider.stage}.memorySize, '128'}
+  stage: ${self:custom.env} # XXX The stage directly depends on the environment, it's the same thing
+  region: ${opt:region, 'eu-west-1'} # Ireland by default, must always be Ireland
+  environment:
+    NODE_ENV: ${self:custom.env} # XXX Necessary to provide this because sometimes some packages rely on the NODE_ENV
+    SERVICE: ${self:service}
+  profile:
+  deploymentBucket:
+    serverSideEncryption: AES256
+  stackTags:
+    env: ${self:custom.env}
+    stage: ${self:provider.stage}
+    region: ${self:provider.region}
+    product: ${self:service}
+
+functions:
+  status:
+    handler: src/status.handler
+    events:
+      - http:
+          path: status
+          method: get
+
+
+
+

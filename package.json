@@ -1,0 +1,41 @@
+{
+  "name": "@unly/startup-project-template",
+  "version": "1.0.0",
+  "description": "easily create startup project template",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "lint": "eslint . --cache --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/UnlyEd/startup-project-template.git"
+  },
+  "bugs": {
+    "url": "https://github.com/UnlyEd/startup-project-template/issues"
+  },
+  "homepage": "https://github.com/UnlyEd/startup-project-template",
+  "bin": {
+    "unly_start": "./index.js"
+  },
+  "author": "unlyEd",
+  "license": "MIT",
+  "dependencies": {
+    "inquirer": "6.2.0"
+  },
+  "devDependencies": {
+    "eslint": "5.10.0",
+    "eslint-config-airbnb-base": "13.1.0",
+    "eslint-plugin-import": "2.14.0"
+  },
+  "keywords": [
+    "template",
+    "project"
+  ],
+  "files": [
+    "templates",
+    "index",
+    "lib",
+    "README"
+  ]
+}
