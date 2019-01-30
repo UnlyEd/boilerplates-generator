@@ -1,0 +1,73 @@
+{
+  "name": "@unly/skeleton",
+  "version": "1.0.1",
+  "description": "Library Skeleton project",
+  "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UnlyEd/skeleton.git"
+  },
+  "author": "unlyEd",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/UnlyEd/skeleton/issues"
+  },
+  "homepage": "https://github.com/UnlyEd/skeleton",
+  "files": [
+    "/lib",
+    "/API.md"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
+  "jest": {
+    "verbose": true,
+    "testEnvironment": "node"
+  },
+  "scripts": {
+    "start": "cross-env-shell 'concurrently -p '{name}' -n 'lint,build,test' -c 'gray.bgWhite,yellow.bgBlue,green.bgWhite' \"yarn lint\" \"yarn build\" \"yarn test\"'",
+    "build": "rollup -c -w",
+    "build:once": "rollup -c",
+    "clean": "rm -rf lib/",
+    "lint": "esw src/ --fix --watch",
+    "lint:once": "eslint src/ --fix",
+    "preversion": "yarn lint:once && yarn test:once && yarn doc:toc && yarn run doc:api",
+    "postversion": "git push && git push --tags",
+    "prepublishOnly": "yarn clean && yarn build:once && yarn publish:preview && cli-confirm \"Do you really want to release a new version? Please check the files that will be publicly released first.\"",
+    "publish:preview": "npm pack && tar -xvzf *.tgz && rm -rf package *.tgz",
+    "release": "yarn bump --prompt --commit --tag --push",
+    "releaseAndPublish": "yarn release && npm publish",
+    "doc:api": "jsdoc2md src/*.js > API.md",
+    "doc:toc": "yarn markdown-toc --maxdepth 4 -i README.md",
+    "test": "NODE_ENV=test jest --watch",
+    "test:once": "NODE_ENV=test jest",
+    "test:coverage": "NODE_ENV=test jest --coverage"
+  },
+  "devDependencies": {
+    "@babel/cli": "7.2.3",
+    "@babel/core": "7.2.2",
+    "@babel/preset-env": "7.2.3",
+    "@unly/cli-confirm": "1.1.1",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-jest": "21.2.0",
+    "babel-loader": "8.0.5",
+    "babel-preset-es2015-rollup": "3.0.0",
+    "cli-confirm": "1.0.1",
+    "concurrently": "4.1.0",
+    "cross-env": "5.2.0",
+    "eslint": "4.19.1",
+    "eslint-config-airbnb-base": "13.1.0",
+    "eslint-plugin-import": "2.14",
+    "eslint-watch": "4.0.2",
+    "jest": "21.2.1",
+    "jsdoc-to-markdown": "4.0.1",
+    "markdown-toc": "1.2.0",
+    "rollup": "1.1.2",
+    "rollup-plugin-babel": "4.3.2",
+    "rollup-plugin-commonjs": "9.2.0",
+    "rollup-plugin-node-resolve": "4.0.0",
+    "version-bump-prompt": "4.2.2",
+    "webpack": "3.12.0"
+  }
+}
