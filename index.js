@@ -71,21 +71,20 @@ const readFilesAndWrite = () => {
   }
 };
 
-
 const isDirAlreadyExist = (name) => {
+  const askQuestions = (questions) => {
+    inquirer.prompt(questions)
+      .then((answers) => {
+        projectName = answers['project-name'];
+        isDirAlreadyExist(projectName);
+      });
+  };
+
   if (fs.existsSync(`${CURR_DIR}/${name}`)) {
     askQuestions(QUESTIONS_NEXT);
   } else {
     readFilesAndWrite();
   }
-};
-
-const askQuestions = (questions) => {
-  inquirer.prompt(questions)
-    .then((answers) => {
-      projectName = answers['project-name'];
-      isDirAlreadyExist(projectName);
-    });
 };
 
 
