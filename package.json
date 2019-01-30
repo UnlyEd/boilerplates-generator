@@ -21,7 +21,9 @@
   "author": "unlyEd",
   "license": "MIT",
   "dependencies": {
-    "inquirer": "6.2.0"
+    "inquirer": "6.2.0",
+    "fs-extra": "7.0.1",
+    "klaw-sync": "6.0.0"
   },
   "devDependencies": {
     "eslint": "5.10.0",
