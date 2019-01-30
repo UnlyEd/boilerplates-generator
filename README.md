@@ -4,7 +4,7 @@ This project is a transversal project, which provides a command to generate a pr
 
 Install:
 ```
-    npm install -g https://github.com/UnlyEd/startup-project-template
+npm install -g https://github.com/UnlyEd/startup-project-template
 ```
 
 Use:

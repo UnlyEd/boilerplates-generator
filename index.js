@@ -42,7 +42,7 @@ const QUESTIONS_NEXT = [
   },
 ];
 
-const filterModules = (item) => !item.path.includes('node_modules');
+const filterModules = (item) => !item.path.includes(`${projectName}/node_modules`);
 
 const readFilesAndWrite = () => {
   try {
@@ -52,7 +52,6 @@ const readFilesAndWrite = () => {
       filter: filterModules,
       nodir: true,
     });
-    console.log(files, templatePath)
 
     // change basePath to current directory
     const newfilesPath = files.map((file) => file.path.replace(templatePath, `${CURR_DIR}/${projectName}`));
