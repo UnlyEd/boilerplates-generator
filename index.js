@@ -52,6 +52,7 @@ const readFilesAndWrite = () => {
       filter: filterModules,
       nodir: true,
     });
+    console.log(files, templatePath)
 
     // change basePath to current directory
     const newfilesPath = files.map((file) => file.path.replace(templatePath, `${CURR_DIR}/${projectName}`));
@@ -84,7 +85,7 @@ const askQuestions = (questions) => {
   inquirer.prompt(questions)
     .then((answers) => {
       projectName = answers['project-name'];
-      isDirAlreadyExist(projectName, templatePath);
+      isDirAlreadyExist(projectName);
     });
 };
 
@@ -95,5 +96,5 @@ inquirer.prompt(QUESTIONS)
     projectChoice = answers['project-choice'];
     templatePath = `${__dirname}/templates/${projectChoice}`;
 
-    isDirAlreadyExist(projectName, templatePath);
+    isDirAlreadyExist(projectName);
   });
