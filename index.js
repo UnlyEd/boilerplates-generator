@@ -44,19 +44,18 @@ const QUESTIONS_NEXT = [
 
 const filterModules = (item) => !item.path.includes('node_modules');
 
-const readFilesAndWrite = (path) => {
+const readFilesAndWrite = () => {
   try {
     // return all files root path except directories
-    const files = klawSync(path, {
+    const files = klawSync(templatePath, {
       traverseAll: true,
       filter: filterModules,
       nodir: true,
     });
-    console.log(files);
+
     // change basePath to current directory
     const newfilesPath = files.map((file) => file.path.replace(templatePath, `${CURR_DIR}/${projectName}`));
 
-    console.log(newfilesPath);
     newfilesPath.forEach((file, index) => {
       const content = fs.readFileSync(files[index].path, 'utf8');
 
@@ -73,11 +72,11 @@ const readFilesAndWrite = (path) => {
 };
 
 
-const isDirAlreadyExist = (name, path) => {
+const isDirAlreadyExist = (name) => {
   if (fs.existsSync(`${CURR_DIR}/${name}`)) {
     askQuestions(QUESTIONS_NEXT);
   } else {
-    readFilesAndWrite(path);
+    readFilesAndWrite();
   }
 };
 
