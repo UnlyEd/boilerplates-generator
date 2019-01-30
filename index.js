@@ -52,9 +52,11 @@ const readFilesAndWrite = (path) => {
       filter: filterModules,
       nodir: true,
     });
+    console.log(files);
     // change basePath to current directory
     const newfilesPath = files.map((file) => file.path.replace(templatePath, `${CURR_DIR}/${projectName}`));
 
+    console.log(newfilesPath);
     newfilesPath.forEach((file, index) => {
       const content = fs.readFileSync(files[index].path, 'utf8');
 
