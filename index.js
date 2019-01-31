@@ -42,7 +42,7 @@ const QUESTIONS_NEXT = [
   },
 ];
 
-const filterModules = (item) => !item.path.includes(`${projectName}/node_modules`);
+const filterModules = (item) => !item.path.includes(`${templatePath}/node_modules`);
 
 const readFilesAndWrite = () => {
   try {
