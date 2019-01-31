@@ -8,6 +8,11 @@ const klawSync = require('klaw-sync');
 const CHOICES = fs.readdirSync(`${__dirname}/templates`)
   .filter((fileName) => /^\w.*/.test(fileName));
 
+const libFilesToDeploy = [
+  '/lib',
+  '/API.md',
+];
+
 let projectName;
 let projectChoice;
 let templatePath;
@@ -42,6 +47,18 @@ const QUESTIONS_NEXT = [
   },
 ];
 
+const addFilesKeyInLibrary = (path) => {
+  const content = fs.readFileSync(path, 'utf8');
+
+  try {
+    const dataToJson = JSON.parse(content);
+    dataToJson.files = libFilesToDeploy;
+    fs.writeFileSync(path, JSON.stringify(dataToJson, null, 2));
+  } catch (err) {
+    console.log(err);
+  }
+};
+
 const filterModules = (item) => !item.path.includes(`${templatePath}/node_modules`);
 
 const readFilesAndWrite = () => {
@@ -56,15 +73,22 @@ const readFilesAndWrite = () => {
     // change basePath to current directory
     const newfilesPath = files.map((file) => file.path.replace(templatePath, `${CURR_DIR}/${projectName}`));
 
-    newfilesPath.forEach((file, index) => {
+    newfilesPath.forEach((filePath, index) => {
       const content = fs.readFileSync(files[index].path, 'utf8');
 
       // Almost the same as writeFileSync (i.e. it overwrites),
       // except that if the parent directory does not exist, it's created.
       // file must be a file path (a buffer or a file descriptor is not allowed).
       // options are what you'd pass to fs.writeFileSync().
-      fse.outputFile(file, content);
+      fse.outputFile(filePath, content, (err) => {
+        const regexlibPath = new RegExp(`${CURR_DIR}/${projectName}/package.json$`);
+
+        if (regexlibPath.test(filePath) && (/^library-/).test(projectChoice)) {
+          addFilesKeyInLibrary(filePath);
+        }
+      });
     });
+
     console.log(`Done: ${newfilesPath.length} has been created in ${CURR_DIR}/${projectName}`);
   } catch (er) {
     console.error(er);
