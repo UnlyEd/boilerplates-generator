@@ -13,10 +13,6 @@
     "url": "https://github.com/UnlyEd/skeleton/issues"
   },
   "homepage": "https://github.com/UnlyEd/skeleton",
-  "files": [
-    "/lib",
-    "/API.md"
-  ],
   "publishConfig": {
     "registry": "https://registry.npmjs.org/",
     "access": "public"
