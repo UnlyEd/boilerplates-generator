@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
+    "doc:toc": "yarn markdown-toc --maxdepth 4 -i README.md",
     "lint": "eslint . --cache --fix"
   },
   "repository": {
@@ -16,19 +17,20 @@
   },
   "homepage": "https://github.com/UnlyEd/skeleton-generators",
   "bin": {
-    "generate": "./index.js"
+    "unly-generate-skeleton": "./index.js"
   },
   "author": "unlyEd",
   "license": "MIT",
   "dependencies": {
-    "inquirer": "6.2.0",
     "fs-extra": "7.0.1",
+    "inquirer": "6.2.0",
     "klaw-sync": "6.0.0"
   },
   "devDependencies": {
     "eslint": "4.19.1",
     "eslint-config-airbnb-base": "13.1.0",
-    "eslint-plugin-import": "2.14.0"
+    "eslint-plugin-import": "2.14.0",
+    "markdown-toc": "1.2.0"
   },
   "keywords": [
     "template",
