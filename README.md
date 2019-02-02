@@ -19,15 +19,15 @@ This package provides ready-to-use projects (skeletons), using a generator
 
 Here is a complete list of all available skeletons and what's their goal.
 
-### node-v6.10-aws-serverless
+### - node-v6.10-aws-serverless
 
 A Serverless project using Node 6.10 and AWS provider
 
-### node-v8.10-aws-serverless
+### - node-v8.10-aws-serverless
 
 A Serverless project using Node 8.10 and AWS provider
 
-### node-v8.10-package-MIT
+### - node-v8.10-package-MIT
 
 A Node 8.10 open source package (MIT license)
 
