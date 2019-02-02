@@ -1,7 +1,7 @@
 {
   "name": "@unly/skeleton",
-  "version": "1.0.1",
-  "description": "Library Skeleton project",
+  "version": "1.0.0",
+  "description": "Open-source library using Node v8.10",
   "main": "lib/index.js",
   "repository": {
     "type": "git",
