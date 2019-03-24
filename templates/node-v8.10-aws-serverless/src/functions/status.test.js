@@ -4,7 +4,7 @@ require('dotenv').config({ path: path.resolve(__dirname, '../../../.serverless/.
 
 const status = require('./status');
 
-describe('Function status', () => {
+describe('functions/status.js', () => {
   const event = {
     queryStringParameters: {},
   };
