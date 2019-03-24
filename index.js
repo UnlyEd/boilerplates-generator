@@ -39,7 +39,7 @@ const QUESTIONS_NEXT = [
   {
     name: 'project-name',
     type: 'input',
-    message: 'Please choose an other project name (already exists):',
+    message: 'Please choose another project name (already exists):',
     validate(input) {
       if (/^([A-Za-z\-_\d])+$/.test(input)) return true;
       return 'Project name may only include letters, numbers, underscores and hashes.';
