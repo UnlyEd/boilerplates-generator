@@ -13,13 +13,13 @@ custom:
   env: ${env:ENV, 'development'} # Defaults to "development" if not provided (see package.json scripts)
   envs:
     development:
-      profile: # XXX staging profile
+      profile: sandbox # XXX staging profile
       memorySize: 128
     staging:
-      profile: # XXX staging profile
+      profile: sandbox # XXX staging profile
       memorySize: 128
     production:
-      profile: # XXX production profile
+      profile: sandbox # XXX production profile
       memorySize: 128
 #  sentry:
 #    dsn: # url sentry
