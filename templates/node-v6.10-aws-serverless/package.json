@@ -1,39 +1,50 @@
 {
   "name": "serverless_template",
-  "jest": {
-    "verbose": true,
-    "testEnvironment": "node"
-  },
+  "version": "0.0.1",
+  "private": true,
   "scripts": {
-    "test": "sls dotenv && jest --watch",
-    "start": "ENV=${ENV:-development}; ENV=$ENV sls offline start",
     "deploy": "ENV=${ENV:-staging}; ENV=$ENV sls deploy",
-    "deploy:prod": "ENV=${ENV:-production}; ENV=$ENV sls deploy",
-    "delete": "ENV=${ENV:-staging}; ENV=$ENV sls remove"
+    "logs:status": "ENV=${ENV:-staging}; ENV=$ENV sls logs -f status -s $ENV --startTime 10m",
+    "remove": "ENV=${ENV:-staging}; ENV=$ENV sls remove",
+    "start": "ENV=${ENV:-development}; ENV=$ENV sls offline start --dontPrintOutput",
+    "preversion": "yarn run test:once",
+    "postversion": "git push && git push --tags",
+    "release": "yarn bump --tag",
+    "test": "NODE_ENV=test jest --watch --runInBand",
+    "test:once": "NODE_ENV=test jest",
+    "test:coverage": "NODE_ENV=test jest --coverage",
+    "test:all": "NODE_ENV=test jest --coverage --runInBand"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "verbose": true
+  },
+  "dependencies": {
+    "@jimdo/serverless-dotenv": "1.0.0",
+    "@unly/utils-aws": "1.0.3",
+    "aws-sdk": "2.296.0",
+    "dotenv": "6.1.0",
+    "moment": "2.22.2",
+    "raven": "2.6.4",
+    "serverless-sentry-lib": "1.1.2"
   },
   "devDependencies": {
     "@sentry/webpack-plugin": "1.6.1",
     "babel-core": "6.26.3",
     "babel-loader": "7.1.5",
     "babel-plugin-source-map-support": "1.0.0",
+    "babel-plugin-transform-runtime": "6.23.0",
     "babel-preset-env": "1.7.0",
     "babel-preset-stage-3": "6.24.1",
+    "git-revision-webpack-plugin": "2.5.1",
     "jest": "23.6.0",
-    "raven": "2.6.4",
+    "markdown-toc": "1.2.0",
     "serverless": "1.30.3",
     "serverless-domain-manager": "2.6.0",
     "serverless-offline": "3.25.8",
     "serverless-sentry": "1.2.0",
     "serverless-webpack": "5.2.0",
-    "webpack": "4.16.5",
-    "webpack-node-externals": "1.7.2"
-  },
-  "dependencies": {
-    "@jimdo/serverless-dotenv": "1.0.0",
-    "aws-sdk": "2.296.0",
-    "dotenv": "6.1.0",
-    "git-revision-webpack-plugin": "2.5.1",
-    "moment": "2.22.2",
-    "serverless-sentry-lib": "1.1.2"
+    "version-bump-prompt": "4.2.2",
+    "webpack": "4.16.5"
   }
 }
