@@ -16,7 +16,7 @@
     "test:all": "NODE_ENV=test jest --coverage --runInBand"
   },
   "jest": {
-    "setupTestFrameworkScriptFile": "jest-extended",
+    "setupTestFrameworkScriptFile": "./testSetup.js",
     "testEnvironment": "node",
     "verbose": true
   },
@@ -39,6 +39,7 @@
     "babel-preset-stage-3": "6.24.1",
     "git-revision-webpack-plugin": "3.0.3",
     "jest": "23.6.0",
+    "jest-chain": "1.1.2",
     "jest-extended": "0.11.1",
     "markdown-toc": "1.2.0",
     "serverless": "1.30.3",
