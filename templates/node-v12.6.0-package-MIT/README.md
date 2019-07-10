@@ -1,6 +1,6 @@
 # Library Skeleton
 
-This project is a skeleton for library open source
+This project is a skeleton for an open source library
 
 <!-- toc -->
 
