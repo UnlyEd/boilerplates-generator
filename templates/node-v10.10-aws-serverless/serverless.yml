@@ -1,0 +1,75 @@
+service: serverless-template
+
+frameworkVersion: "=1.46.0"
+
+plugins:
+  - serverless-webpack # Must be first, see https://github.com/99xt/serverless-dynamodb-local#using-with-serverless-offline-and-serverless-webpack-plugin
+#  - serverless-sentry # https://github.com/arabold/serverless-sentry-plugin
+  - '@unly/serverless-env-copy-plugin' # See https://github.com/UnlyEd/serverless-env-copy-plugin
+  - serverless-offline
+#  - serverless-domain-manager # See https://github.com/amplify-education/serverless-domain-manager
+
+custom:
+  env: ${env:ENV, 'development'} # Defaults to "development" if not provided (see package.json scripts)
+  envs:
+    development:
+      profile: sandbox # XXX staging profile
+      memorySize: 128
+    staging:
+      profile: sandbox # XXX staging profile
+      memorySize: 128
+    production:
+      profile: sandbox # XXX production profile
+      memorySize: 128
+#  sentry:
+#    dsn: # url sentry
+#    organization: unly
+#    project: # project name
+#    authToken:  # XXX Duplicated in .sentryclirc and both must be updated accordingly
+#    release: # https://github.com/arabold/serverless-sentry-plugin#releases
+#      version: true
+#    filterLocal: false # We don't filter local errors because we want to help dev with additional debug information when working on localhost
+  serverless-offline:
+    port: 3000
+  webpack:
+    webpackConfig: 'webpack.config.js'
+    includeModules:
+      forceExclude:
+        - aws-sdk
+    packager: 'yarn'
+    packagerOptions: {}
+    excludeFiles: src/**/*.test.js
+    keepOutputDirectory: true
+
+provider:
+  name: aws
+  runtime: nodejs10.x
+  versionFunctions: false
+  logRetentionInDays: 60
+  timeout: 30
+  memorySize: ${self:custom.envs.${self:provider.stage}.memorySize, '128'}
+  stage: ${self:custom.env} # XXX The stage directly depends on the environment, it's the same thing
+  region: ${opt:region, 'eu-west-1'} # Ireland by default, must always be Ireland
+  environment:
+    NODE_ENV: ${self:custom.env} # XXX Necessary to provide this because sometimes some packages rely on the NODE_ENV
+    SERVICE: ${self:service}
+  profile:
+  deploymentBucket:
+    serverSideEncryption: AES256
+  stackTags:
+    env: ${self:custom.env}
+    stage: ${self:provider.stage}
+    region: ${self:provider.region}
+    product: ${self:service}
+    runtime: ${self:provider.runtime}
+functions:
+  status:
+    handler: src/functions/status.handler
+    events:
+      - http:
+          path: status
+          method: get
+
+
+
+
