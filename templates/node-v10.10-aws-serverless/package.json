@@ -21,9 +21,8 @@
     "verbose": true
   },
   "dependencies": {
-    "@jimdo/serverless-dotenv": "1.0.0",
+    "@unly/serverless-env-copy-plugin": "1.0.0",
     "@unly/utils-aws": "1.0.3",
-    "aws-sdk": "2.296.0",
     "dotenv": "6.1.0",
     "moment": "2.22.2",
     "raven": "2.6.4",

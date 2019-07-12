@@ -16,5 +16,6 @@ export const handler = RavenLambdaWrapper.handler(Raven, async (event, context) 
     branch: process.env.GIT_BRANCH,
     releasedAt: process.env.DEPLOY_TIME,
     version: process.env.npm_package_version,
+    nodejs: process.version
   }),
 }));
