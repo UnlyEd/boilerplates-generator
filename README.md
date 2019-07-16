@@ -8,6 +8,8 @@ This package provides ready-to-use projects (skeletons), using a generator
   * [node-v6.10-aws-serverless](#node-v610-aws-serverless)
   * [node-v8.10-aws-serverless](#node-v810-aws-serverless)
   * [node-v8.10-package-MIT](#node-v810-package-mit)
+  * [node-v10.10-aws-serverless](#node-v1010-aws-serverless)
+  * [node-v12.6-package-MIT](#node-v126-package-mit)
 - [Getting started](#getting-started)
 - [Usage](#usage)
   * [Global install](#global-install)
@@ -27,9 +29,17 @@ A Serverless project using Node 6.10 and AWS provider
 
 A Serverless project using Node 8.10 and AWS provider
 
+### - node-v10.10-aws-serverless
+
+A Serverless project using Node 10.10 and AWS provider
+
 ### - node-v8.10-package-MIT
 
 A Node 8.10 open source package (MIT license)
+
+### - node-v12.6-package-MIT
+
+A Node 12.6 open source package (MIT license)
 
 ## Getting started
 
