@@ -39,6 +39,8 @@ A Serverless project using Node 10.10 and AWS provider.
 
 A Node 8.10 open source package (MIT license).
 
+> Meant for a quick start with libraries meant to be published under the MIT licence (NPM)
+
 ### ~~- node-v8.10-aws-serverless~~ (deprecated)
 
 A Serverless project using Node 8.10 and AWS provider.
