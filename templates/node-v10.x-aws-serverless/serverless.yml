@@ -13,15 +13,15 @@ plugins:
 custom:
   environment: ${env:NODE_ENV, 'development'} # Defaults to "development" if not provided (see package.json scripts)
   envs:
-    development:
-      profile: sandbox # XXX TODO use staging profile
+    development: # Necessary for running SLS scripts locally, but not shouldn't be used to deploy anything
+      profile: sandbox # XXX TODO use staging aws profile
       memorySize: 128
     staging:
-      profile: sandbox # XXX TODO use staging profile
+      profile: sandbox # XXX TODO use staging aws profile
       memorySize: 128
     production:
-      profile: sandbox # XXX TODO use production profile
-      memorySize: 128
+      profile: sandbox # XXX TODO use production aws profile
+      memorySize: 512
 #  sentry:
 #    dsn: # url sentry
 #    organization: unly

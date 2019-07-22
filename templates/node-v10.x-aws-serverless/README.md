@@ -21,21 +21,54 @@ This project was generated using https://github.com/UnlyEd/skeleton-generators/t
 
 ## Getting started
 
-npm or yarn
+### Install
 
 ```
-
+yarn install
 ```
 
-Use:
+### Use
 
 ```
+yarn start
+```
+
+### Deploy
 
 ```
+yarn deploy # Deploy to staging env
+NODE_ENV=production yarn deploy # Deploy to production env
+```
+
+### Logs
+
+```
+yarn logs:status
+```
+
+Similar to reading the logs from the AWS Console
+
+### Test
+
+```
+yarn test
+yarn test:coverage
+```
+
+### Release
+Will prompt version to release, run tests, commit/push commit + tag
+
+```
+yarn release
+```
+
+
+> Check the [./package.json](./package.json) file to see what other utility scripts are available
 
 ## Features/defaults provided by this boilerplate
 
 - SLS handles stages/environments and settings per environment (memorySize, AWS profile, etc.)
+  - "staging" and "production" environments built-in
 - SLS scripts (helpers)
 - Environment variables built-in by default (both from .env* files and serverless.yml), using `dotenv` and `@unly/serverless-env-copy-plugin`
 - Sentry easy opt-in (disabled by default)
