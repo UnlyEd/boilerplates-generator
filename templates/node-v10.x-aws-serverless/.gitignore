@@ -126,3 +126,6 @@ Session.vim
 
 # Sensitive
 .env.production
+
+# Tests
+coverage
