@@ -1,6 +1,6 @@
 # Library Skeleton
 
-This project is a skeleton for an open source library
+This project was generated using https://github.com/UnlyEd/skeleton-generators/tree/master/templates/node-v12.6.0-package-MIT
 
 <!-- toc -->
 
