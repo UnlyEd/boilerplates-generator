@@ -28,7 +28,6 @@
     "verbose": true
   },
   "dependencies": {
-    "@unly/serverless-env-copy-plugin": "1.0.0",
     "@unly/utils-aws": "1.0.3",
     "dotenv": "8.0.0",
     "moment": "2.22.2",
@@ -40,6 +39,7 @@
     "@babel/core": "7.4.5",
     "@babel/preset-env": "7.4.5",
     "@sentry/webpack-plugin": "1.6.1",
+    "@unly/serverless-env-copy-plugin": "1.0.0",
     "babel-jest": "24.8.0",
     "babel-loader": "8.0.6",
     "babel-plugin-source-map-support": "2.1.1",

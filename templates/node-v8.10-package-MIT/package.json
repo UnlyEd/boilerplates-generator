@@ -49,7 +49,6 @@
     "babel-jest": "21.2.0",
     "babel-loader": "8.0.5",
     "babel-preset-es2015-rollup": "3.0.0",
-    "cli-confirm": "1.0.1",
     "concurrently": "4.1.0",
     "cross-env": "5.2.0",
     "eslint": "4.19.1",

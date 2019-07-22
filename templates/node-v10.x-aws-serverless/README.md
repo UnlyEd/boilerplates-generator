@@ -2,8 +2,21 @@
 
 This project was generated using https://github.com/UnlyEd/skeleton-generators/tree/master/templates/node-v10.10-aws-serverless
 
+<!-- toc -->
 
-# TODO (after generating a project from this boilerplate)
+- [TODO (after generating a project from this boilerplate)](#todo-after-generating-a-project-from-this-boilerplate)
+- [Getting started](#getting-started)
+  * [Install](#install)
+  * [Use](#use)
+  * [Deploy](#deploy)
+  * [Logs](#logs)
+  * [Test](#test)
+  * [Release](#release)
+- [Features/defaults provided by this boilerplate](#featuresdefaults-provided-by-this-boilerplate)
+
+<!-- tocstop -->
+
+## TODO (after generating a project from this boilerplate)
 
 - Rename occurrences of `PROJECT-NAME`
 - Look for `TODO`
@@ -12,12 +25,6 @@ This project was generated using https://github.com/UnlyEd/skeleton-generators/t
   - `serverless.yml`
   - `.sentryclirc`
 - Delete this
-
-<!-- toc -->
-
-- [Getting started](#getting-started)
-
-<!-- tocstop -->
 
 ## Getting started
 
