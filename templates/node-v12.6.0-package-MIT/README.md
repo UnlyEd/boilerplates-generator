@@ -1,9 +1,12 @@
-# Library Skeleton
+# PROJECT-NAME
+
+> Boilerplate currently broken due to webpack misconfiguration
 
 This project was generated using https://github.com/UnlyEd/skeleton-generators/tree/master/templates/node-v12.6.0-package-MIT
 
 <!-- toc -->
 
+- [TODO (after generating a project from this boilerplate)](#todo-after-generating-a-project-from-this-boilerplate)
 - [Getting started](#getting-started)
 - [API](#api)
 - [Contributing](#contributing)
@@ -14,18 +17,21 @@ This project was generated using https://github.com/UnlyEd/skeleton-generators/t
 
 <!-- tocstop -->
 
+## TODO (after generating a project from this boilerplate)
+
+- Rename occurrences of `PROJECT-NAME`
+- Delete this
+
 ## Getting started
 
-npm or yarn
-
 ```
-
+yarn install
 ```
 
 Use:
 
 ```
-
+yarn start
 ```
 
 ## API
@@ -38,7 +44,7 @@ Use:
 
 We gladly accept PRs, but please open an issue first so we can discuss it beforehand.
 
-### Getting started
+### Working locally
 
 ```
 yarn start # Shortcut - Runs linter + build + tests in concurrent mode (watch mode)
