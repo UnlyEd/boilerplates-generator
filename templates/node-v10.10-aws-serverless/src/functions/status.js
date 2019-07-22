@@ -16,6 +16,9 @@ export const handler = RavenLambdaWrapper.handler(Raven, async (event, context) 
     branch: process.env.GIT_BRANCH,
     releasedAt: process.env.DEPLOY_TIME,
     version: process.env.npm_package_version,
-    nodejs: process.version
+    nodejs: process.version,
+    // AWS_ACCOUNT_ID: process.env.AWS_ACCOUNT_ID, // XXX Commented out by default because sensitive
+    EXAMPLE_ENV_VAR: process.env.EXAMPLE_ENV_VAR, // Example of ENV var defined in "/.env" file
+    SERVICE: process.env.SERVICE, // Example of ENV var defined in "/serverless.yml"
   }),
 }));

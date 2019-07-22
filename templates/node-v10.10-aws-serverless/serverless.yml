@@ -1,25 +1,26 @@
-service: serverless-template
+service: PROJECT-NAME
 
 frameworkVersion: "=1.46.0"
 
 plugins:
   - serverless-webpack # Must be first, see https://github.com/99xt/serverless-dynamodb-local#using-with-serverless-offline-and-serverless-webpack-plugin
 #  - serverless-sentry # https://github.com/arabold/serverless-sentry-plugin
+  - serverless-offline # See https://github.com/dherault/serverless-offline
   - '@unly/serverless-env-copy-plugin' # See https://github.com/UnlyEd/serverless-env-copy-plugin
-  - serverless-offline
 #  - serverless-domain-manager # See https://github.com/amplify-education/serverless-domain-manager
+  - serverless-dotenv-plugin # See https://www.npmjs.com/package/serverless-dotenv-plugin
 
 custom:
-  env: ${env:ENV, 'development'} # Defaults to "development" if not provided (see package.json scripts)
+  environment: ${env:NODE_ENV, 'development'} # Defaults to "development" if not provided (see package.json scripts)
   envs:
     development:
-      profile: sandbox # XXX staging profile
+      profile: sandbox # XXX TODO use staging profile
       memorySize: 128
     staging:
-      profile: sandbox # XXX staging profile
+      profile: sandbox # XXX TODO use staging profile
       memorySize: 128
     production:
-      profile: sandbox # XXX production profile
+      profile: sandbox # XXX TODO use production profile
       memorySize: 128
 #  sentry:
 #    dsn: # url sentry
@@ -48,19 +49,19 @@ provider:
   logRetentionInDays: 60
   timeout: 30
   memorySize: ${self:custom.envs.${self:provider.stage}.memorySize, '128'}
-  stage: ${self:custom.env} # XXX The stage directly depends on the environment, it's the same thing
+  stage: ${self:custom.environment} # XXX The stage directly depends on the environment, it's the same thing
   region: ${opt:region, 'eu-west-1'} # Ireland by default, must always be Ireland
   environment:
-    NODE_ENV: ${self:custom.env} # XXX Necessary to provide this because sometimes some packages rely on the NODE_ENV
+    NODE_ENV: ${self:custom.environment}
     SERVICE: ${self:service}
-  profile:
+  profile: ${self:custom.envs.${self:provider.stage}.profile, ''}
   deploymentBucket:
     serverSideEncryption: AES256
   stackTags:
-    env: ${self:custom.env}
+    env: ${self:custom.environment}
     stage: ${self:provider.stage}
     region: ${self:provider.region}
-    product: ${self:service}
+    service: ${self:service}
     runtime: ${self:provider.runtime}
 functions:
   status:
@@ -69,7 +70,3 @@ functions:
       - http:
           path: status
           method: get
-
-
-
-

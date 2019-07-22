@@ -124,6 +124,5 @@ Session.vim
 .webpack
 .serverless
 
-# Configuration
-local-config.yml
-.env
+# Sensitive
+.env.production
