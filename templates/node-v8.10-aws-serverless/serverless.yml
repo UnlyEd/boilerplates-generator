@@ -62,7 +62,7 @@ provider:
     env: ${self:custom.env}
     stage: ${self:provider.stage}
     region: ${self:provider.region}
-    product: ${self:service}
+    service: ${self:service}
 
 functions:
   status:
