@@ -15,10 +15,11 @@
     "postversion": "git push && git push --tags",
     "release": "yarn bump --tag",
     "doc:toc": "yarn markdown-toc --maxdepth 4 -i README.md",
-    "test": "NODE_ENV=test jest --watch --runInBand",
-    "test:once": "NODE_ENV=test jest",
-    "test:coverage": "NODE_ENV=test jest --coverage",
-    "test:all": "NODE_ENV=test jest --coverage --runInBand"
+    "test": "NODE_ENV=test yarn sls:dotenv && jest --watch",
+    "test:serie": "NODE_ENV=test yarn sls:dotenv && jest --watch --runInBand",
+    "test:once": "NODE_ENV=test yarn sls:dotenv && jest",
+    "test:coverage": "NODE_ENV=test yarn sls:dotenv && jest --coverage",
+    "test:coverage:serie": "NODE_ENV=test yarn sls:dotenv && jest --coverage --runInBand"
   },
   "jest": {
     "setupFilesAfterEnv": [
