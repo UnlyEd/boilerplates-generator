@@ -1,0 +1,21 @@
+version: 0.2
+
+env:
+  # Please refer to https://github.com/UnlyEd/slack-codebuild
+  variables:
+    SLACK_WEBHOOK_URL: "https://hooks.slack.com/services/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"
+    CODEBUILD_NOTIFY_ONLY_IF_FAIL: 1
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 10
+    commands:
+      - yarn
+      - yarn global add @unly/slack-codebuild
+  build:
+    commands:
+      - yarn test:once
+  post_build:
+    finally:
+      - slack-codebuild
