@@ -10,7 +10,7 @@ env:
 phases:
   install:
     runtime-versions:
-      nodejs: 10
+      nodejs: 8
     commands:
       - yarn --production=false
       - yarn global add @unly/slack-codebuild
