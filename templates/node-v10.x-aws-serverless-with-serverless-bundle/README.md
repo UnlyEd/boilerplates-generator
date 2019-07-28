@@ -1,6 +1,9 @@
 # PROJECT-NAME
 
-This project was generated using https://github.com/UnlyEd/skeleton-generators/tree/master/templates/node-v10.10-aws-serverless
+This project was generated using https://github.com/UnlyEd/skeleton-generators/tree/master/templates/node-v10.x-aws-serverless-with-serverless-bundle
+
+> This project is similar to node-v10.x-aws-serverless, but uses https://github.com/AnomalyInnovations/serverless-bundle to simplify the babel/webpack configuration.
+> Use this for a quick POC/test project. Beware that you won't be able to customise webpack/babel configurations using serverless-bundle (simplicity over flexibility). 
 
 <!-- toc -->
 
@@ -74,6 +77,7 @@ yarn release
 
 ## Features/defaults provided by this boilerplate
 
+- Usage of https://github.com/AnomalyInnovations/serverless-bundle in order to simplify the webpack/babel setup, at the cost of flexibility
 - SLS handles stages/environments and settings per environment (memorySize, AWS profile, etc.)
   - "staging" and "production" environments built-in
 - SLS scripts (helpers)
