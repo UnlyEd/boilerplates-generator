@@ -4,7 +4,6 @@ frameworkVersion: "=1.46.0"
 
 plugins:
   - serverless-bundle # Must be first, see https://github.com/AnomalyInnovations/serverless-bundle
-  #  - serverless-sentry # https://github.com/arabold/serverless-sentry-plugin
   - serverless-offline # See https://github.com/dherault/serverless-offline
   - '@unly/serverless-env-copy-plugin' # See https://github.com/UnlyEd/serverless-env-copy-plugin
   #  - serverless-domain-manager # See https://github.com/amplify-education/serverless-domain-manager
@@ -22,14 +21,6 @@ custom:
     production:
       profile: sandbox # XXX TODO use production aws profile
       memorySize: 512
-  #  sentry:
-  #    dsn: # url sentry
-  #    organization: unly
-  #    project: # project name
-  #    authToken:  # XXX Duplicated in .sentryclirc and both must be updated accordingly
-  #    release: # https://github.com/arabold/serverless-sentry-plugin#releases
-  #      version: true
-  #    filterLocal: false # We don't filter local errors because we want to help dev with additional debug information when working on localhost
   serverless-offline:
     port: 3000
 

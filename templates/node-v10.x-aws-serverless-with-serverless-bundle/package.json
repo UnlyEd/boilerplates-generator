@@ -30,9 +30,7 @@
   "dependencies": {
     "@unly/utils-aws": "1.0.3",
     "dotenv": "8.0.0",
-    "moment": "2.22.2",
-    "raven": "2.6.4",
-    "serverless-sentry-lib": "1.1.2"
+    "moment": "2.22.2"
   },
   "devDependencies": {
     "@unly/serverless-env-copy-plugin": "1.0.0",
@@ -45,7 +43,6 @@
     "serverless-domain-manager": "2.6.0",
     "serverless-dotenv-plugin": "2.0.1",
     "serverless-offline": "5.8.0",
-    "serverless-sentry": "1.2.0",
     "version-bump-prompt": "5.0.0"
   }
 }

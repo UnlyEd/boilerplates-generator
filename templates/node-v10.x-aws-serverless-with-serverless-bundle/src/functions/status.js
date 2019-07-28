@@ -1,9 +1,7 @@
-import RavenLambdaWrapper from 'serverless-sentry-lib';
-import Raven from 'raven';
 import moment from 'moment';
 import { isHostedOnAws } from '@unly/utils-aws';
 
-export const handler = RavenLambdaWrapper.handler(Raven, async (event, context) => ({
+export const handler = async (event, context) => ({
   statusCode: 200,
   body: JSON.stringify({
     status: 'OK',
@@ -21,4 +19,4 @@ export const handler = RavenLambdaWrapper.handler(Raven, async (event, context) 
     EXAMPLE_ENV_VAR: process.env.EXAMPLE_ENV_VAR, // Example of ENV var defined in "/.env" file
     SERVICE: process.env.SERVICE, // Example of ENV var defined in "/serverless.yml"
   }),
-}));
+});
