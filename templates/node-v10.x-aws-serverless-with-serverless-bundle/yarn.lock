@@ -7511,10 +7511,10 @@ serve-static@1.14.1:
     parseurl "~1.3.3"
     send "0.17.1"
 
-serverless-bundle@1.2.2:
-  version "1.2.2"
-  resolved "https://registry.yarnpkg.com/serverless-bundle/-/serverless-bundle-1.2.2.tgz#9b01e3950a9b2a511031dc8fe059c9868803218e"
-  integrity sha512-/ZoVW4LWUVxN+CZkn8sCa1wugAF+tWtS8vDnCWr6Z4LoYMzsemO4wPSjWD9vtZHBugR06YDgV5kfQt8gdiWuww==
+serverless-bundle@1.2.3:
+  version "1.2.3"
+  resolved "https://registry.yarnpkg.com/serverless-bundle/-/serverless-bundle-1.2.3.tgz#d34374101c59b1ad8fa37d6689ecd74f2a65b623"
+  integrity sha512-XfYijmsdcsczn748I3wgO4GIgITXDb8jPUcVyqPcX5aNIbFVxWLoy/09Zmn6+rdf7aQo9EKn/h/4cEwROkdJGQ==
   dependencies:
     "@babel/core" "^7.5.4"
     "@babel/plugin-transform-runtime" "^7.5.0"
@@ -7524,6 +7524,7 @@ serverless-bundle@1.2.2:
     babel-jest "^24.8.0"
     babel-loader "^8.0.6"
     babel-plugin-source-map-support "^2.1.1"
+    chalk "^2.4.2"
     copy-webpack-plugin "^5.0.3"
     core-js "^3.1.4"
     cross-spawn "^6.0.5"

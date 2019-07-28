@@ -24,10 +24,8 @@
   "jest": {
     "setupFilesAfterEnv": [
       "./jest-preload-env.js",
-      "jest-extended",
-      "FIXME this isn't used or it would crash during tests -- remove this line once serverless-bundle handles custom setupFilesAfterEnv"
-    ],
-    "verbose": true
+      "jest-extended"
+    ]
   },
   "dependencies": {
     "@unly/utils-aws": "1.0.3",
@@ -43,7 +41,7 @@
     "jest-extended": "0.11.1",
     "markdown-toc": "1.2.0",
     "serverless": "1.46.0",
-    "serverless-bundle": "1.2.2",
+    "serverless-bundle": "1.2.3",
     "serverless-domain-manager": "2.6.0",
     "serverless-dotenv-plugin": "2.0.1",
     "serverless-offline": "5.8.0",
