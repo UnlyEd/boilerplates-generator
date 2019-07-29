@@ -1,5 +1,5 @@
 {
-  "name": "@unly/skeleton-generators",
+  "name": "@unly/boilerplate-generator",
   "version": "1.0.0",
   "description": "easily create startup project template",
   "main": "index.js",
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/UnlyEd/skeleton-generators.git"
+    "url": "https://github.com/UnlyEd/boilerplate-generator.git"
   },
   "bugs": {
-    "url": "https://github.com/UnlyEd/skeleton-generators/issues"
+    "url": "https://github.com/UnlyEd/boilerplate-generator/issues"
   },
-  "homepage": "https://github.com/UnlyEd/skeleton-generators",
+  "homepage": "https://github.com/UnlyEd/boilerplate-generator",
   "bin": {
-    "unly-generate-skeleton": "./index.js"
+    "unly-boilerplate-generator": "./index.js"
   },
   "author": "unlyEd",
   "license": "MIT",

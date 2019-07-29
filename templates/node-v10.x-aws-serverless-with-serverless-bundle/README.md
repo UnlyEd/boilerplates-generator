@@ -1,6 +1,6 @@
 # PROJECT-NAME
 
-This project was generated using https://github.com/UnlyEd/skeleton-generators/tree/master/templates/node-v10.x-aws-serverless-with-serverless-bundle
+This project was generated using https://github.com/UnlyEd/boilerplate-generator/tree/master/templates/node-v10.x-aws-serverless-with-serverless-bundle
 
 > This project is similar to node-v10.x-aws-serverless, but uses https://github.com/AnomalyInnovations/serverless-bundle to simplify the babel/webpack configuration.
 > Use this for a quick POC/test project. Beware that you won't be able to customise webpack/babel configurations using serverless-bundle (simplicity over flexibility).

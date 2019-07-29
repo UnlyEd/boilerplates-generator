@@ -110,7 +110,7 @@ npm install -g https://github.com/UnlyEd/boilerplates-generator
 ```
 
 Usage:
-- `unly-generate-skeleton` (starts the CLI, use arrow-keys)
+- `unly-boilerplate-generator` (starts the CLI, use arrow-keys)
 
 ### Local install
 - `git clone git@github.com:UnlyEd/boilerplates-generator.git`

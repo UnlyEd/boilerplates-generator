@@ -1,6 +1,6 @@
 # PROJECT-NAME
 
-This project was generated using https://github.com/UnlyEd/skeleton-generators/tree/master/templates/node-v10.10-aws-serverless
+This project was generated using https://github.com/UnlyEd/boilerplate-generator/tree/master/templates/node-v10.10-aws-serverless
 
 <!-- toc -->
 

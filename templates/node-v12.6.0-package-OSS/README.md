@@ -2,7 +2,7 @@
 
 > Boilerplate currently broken due to webpack misconfiguration
 
-This project was generated using https://github.com/UnlyEd/skeleton-generators/tree/master/templates/node-v12.6.0-package-OSS
+This project was generated using https://github.com/UnlyEd/boilerplate-generator/tree/master/templates/node-v12.6.0-package-OSS
 
 <!-- toc -->
 
