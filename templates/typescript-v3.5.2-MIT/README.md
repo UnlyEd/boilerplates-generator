@@ -1,6 +1,6 @@
 # PROJECT-NAME
 
-This project was generated using https://github.com/UnlyEd/skeleton-generators/tree/master/templates/node-v12.6.0-package-MIT
+This project was generated using https://github.com/UnlyEd/skeleton-generators/tree/master/templates/typescript-v3.5.2-MIT
 
 <!-- toc -->
 
