@@ -1,3 +1,5 @@
+[![Maintainability](https://api.codeclimate.com/v1/badges/73c7f933ea88c7f1c239/maintainability)](https://codeclimate.com/github/UnlyEd/boilerplates-generator/maintainability)
+
 # Boilerplates generator
 
 This package provides ready-to-use projects (boilerplates). 
