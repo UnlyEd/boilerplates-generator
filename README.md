@@ -6,9 +6,11 @@ See [Getting started](#getting-started) for usage.
 <!-- toc -->
 
 - [Boilerplates](#boilerplates)
-  * [- node-v12.6-package-MIT](#--node-v126-package-mit)
-  * [- node-v10.x-aws-serverless](#--node-v1010-aws-serverless)
+  * [- node-v10.x-aws-serverless](#--node-v10x-aws-serverless)
+  * [- node-v10.x-aws-serverless-with-serverless-bundle](#--node-v10x-aws-serverless-with-serverless-bundle)
+  * [- typescript-v3.5.2-MIT](#--typescript-v352-mit)
   * [- node-v8.10-package-MIT](#--node-v810-package-mit)
+  * [~~- node-v12.6-package-MIT~~ **(webpack broken, awaiting fix)**](#--node-v126-package-mit-webpack-broken-awaiting-fix)
   * [~~- node-v8.10-aws-serverless~~ (deprecated)](#--node-v810-aws-serverless-deprecated)
   * [~~- node-v6.10-aws-serverless~~ (deprecated)](#--node-v610-aws-serverless-deprecated)
 - [Getting started](#getting-started)
