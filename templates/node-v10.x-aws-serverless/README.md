@@ -26,6 +26,26 @@ This project was generated using https://github.com/UnlyEd/skeleton-generators/t
   - `.sentryclirc`
 - Delete this
 
+## Features/defaults provided by this boilerplate
+
+- SLS handles stages/environments and settings per environment (memorySize, AWS profile, etc.)
+  - "staging" and "production" environments built-in
+- SLS scripts (helpers)
+- Environment variables built-in by default (both from .env* files and serverless.yml), using `dotenv` and `@unly/serverless-env-copy-plugin`
+- Sentry easy opt-in (disabled by default)
+  - Source maps on Sentry for easier debug
+  - Automatic error handling on the lambda level through `RavenLambdaWrapper.handler` (won't do anything if Sentry isn't setup)
+- Babel 7
+- Webpack 4
+- Jest for testing
+  - Jest extended https://github.com/jest-community/jest-extended included
+  - Support for ENV variables built-in
+- Use YARN for packaging
+- 30s timeout on lambda (max allowed)
+- 128Mo RAM on lambda (min allowed)
+- 60 days logs retention (avoid infinite logs and lambda price increase)
+- Enable API GW logs by default
+
 ## Getting started
 
 ### Install
@@ -71,22 +91,3 @@ yarn release
 
 
 > Check the [./package.json](./package.json) file to see what other utility scripts are available
-
-## Features/defaults provided by this boilerplate
-
-- SLS handles stages/environments and settings per environment (memorySize, AWS profile, etc.)
-  - "staging" and "production" environments built-in
-- SLS scripts (helpers)
-- Environment variables built-in by default (both from .env* files and serverless.yml), using `dotenv` and `@unly/serverless-env-copy-plugin`
-- Sentry easy opt-in (disabled by default)
-  - Source maps on Sentry for easier debug
-  - Automatic error handling on the lambda level through `RavenLambdaWrapper.handler` (won't do anything if Sentry isn't setup)
-- Babel 7
-- Webpack 4
-- Jest for testing
-  - Jest extended https://github.com/jest-community/jest-extended included
-  - Support for ENV variables built-in
-- Use YARN for packaging
-- 30s timeout on lambda (max allowed)
-- 128Mo RAM on lambda (min allowed)
-- 60 days logs retention (avoid infinite logs and lambda price increase)
