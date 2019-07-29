@@ -8,9 +8,9 @@ See [Getting started](#getting-started) for usage.
 - [Boilerplates](#boilerplates)
   * [- node-v10.x-aws-serverless](#--node-v10x-aws-serverless)
   * [- node-v10.x-aws-serverless-with-serverless-bundle](#--node-v10x-aws-serverless-with-serverless-bundle)
-  * [- typescript-v3.5.2-MIT](#--typescript-v352-mit)
-  * [- node-v8.10-package-MIT](#--node-v810-package-mit)
-  * [~~- node-v12.6-package-MIT~~ **(webpack broken, awaiting fix)**](#--node-v126-package-mit-webpack-broken-awaiting-fix)
+  * [- typescript-v3.5.2-OSS](#--typescript-v352-oss)
+  * [- node-v8.10-package-OSS](#--node-v810-package-oss)
+  * [~~- node-v12.6-package-OSS~~ **(webpack broken, awaiting fix)**](#--node-v126-package-oss-webpack-broken-awaiting-fix)
   * [~~- node-v8.10-aws-serverless~~ (deprecated)](#--node-v810-aws-serverless-deprecated)
   * [~~- node-v6.10-aws-serverless~~ (deprecated)](#--node-v610-aws-serverless-deprecated)
 - [Getting started](#getting-started)
@@ -34,7 +34,7 @@ All templates come with:
     - Handles CodeClimate Coverage report (which is kinda hard to get right, and require to [manually configure CodeBuild to fetch more than one commit](https://github.com/codeclimate/test-reporter/issues/379) in order to work)
 - [CodeClimate "Quality"](https://codeclimate.com/) configuration, for those who want to use it (free for open source projects)
 
-Templates meant to be used to release open source packages (marked as "MIT") come with:
+Templates meant to be used to release open source packages (marked as "OSS") come with:
 - Travis CI (doesn't handle CodeClimate Coverage report, yet #goodFirstPR)
 - Utilities meant to help to release/publish versions to NPM
 
@@ -58,26 +58,26 @@ Templates meant to be used to release open source packages (marked as "MIT") com
 
 [Go to template](./templates/node-v10.x-aws-serverless-with-serverless-bundle)
 
-### - typescript-v3.5.2-MIT
+### - typescript-v3.5.2-OSS
 
-> This template can be used to getting started fast with a node.js package meant to be released as open source package (MIT license), using TypeScript.
+> This template can be used to getting started fast with a node.js package meant to be released as open source package (OSS license), using TypeScript.
 > It includes utilities meant to help to release/publish versions to NPM.
 
-[Go to template](./templates/typescript-v3.5.2-MIT)
+[Go to template](./templates/typescript-v3.5.2-OSS)
 
-### - node-v8.10-package-MIT
+### - node-v8.10-package-OSS
 
-> This template can be used to getting started fast with a node.js package meant to be released as open source package (MIT license), using Node 8.10.
+> This template can be used to getting started fast with a node.js package meant to be released as open source package (OSS license), using Node 8.10.
 > It includes utilities meant to help to release/publish versions to NPM.
 
-[Go to template](./templates/node-v8.10-package-MIT)
+[Go to template](templates/node-v8.10-package-OSS)
 
-### ~~- node-v12.6-package-MIT~~ **(webpack broken, awaiting fix)**
+### ~~- node-v12.6-package-OSS~~ **(webpack broken, awaiting fix)**
 
-> This template can be used to getting started fast with a node.js package meant to be released as open source package (MIT license), using Node 12.6.
+> This template can be used to getting started fast with a node.js package meant to be released as open source package (OSS license), using Node 12.6.
 > It includes utilities meant to help to release/publish versions to NPM.
 
-[Go to template](./templates/node-v12.6.0-package-MIT)
+[Go to template](templates/node-v12.6.0-package-OSS)
 
 ### ~~- node-v8.10-aws-serverless~~ (deprecated)
 
