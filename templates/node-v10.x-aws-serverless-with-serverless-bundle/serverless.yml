@@ -37,6 +37,11 @@ provider:
     NODE_ENV: ${self:custom.environment}
     SERVICE: ${self:service}
   profile: ${self:custom.envs.${self:provider.stage}.profile, ''}
+  logs:
+    restApi: true # Enable logs in other services, such as API GW - See https://serverless.com/blog/framework-release-v142/
+  apiGateway:
+    binaryMediaTypes:
+      - '*/*' # Allow to return all binary response types - See https://serverless.com/blog/framework-release-v142/
   deploymentBucket:
     serverSideEncryption: AES256
   stackTags:
