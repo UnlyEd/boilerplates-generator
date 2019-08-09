@@ -30,6 +30,6 @@ phases:
   post_build:
     commands:
       - ./cc-test-reporter format-coverage -t lcov --prefix ${CODEBUILD_SRC_DIR} # Looks for ./coverage/lcov.info
-      - ./cc-test-reporter after-build -t lcov --exit-code $? # Uploads ./coverage/lcov.info and ./coverage/codeclimate.json
+      - ./cc-test-reporter after-build --debug -t lcov --exit-code $? # Uploads ./coverage/lcov.info and ./coverage/codeclimate.json
     finally:
       - slack-codebuild
