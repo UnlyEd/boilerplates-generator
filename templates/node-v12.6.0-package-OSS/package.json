@@ -11,7 +11,7 @@
     "lint:once": "eslint src/ --fix",
     "preversion": "yarn lint:once && yarn test:once && yarn doc:toc && yarn run doc:api",
     "postversion": "git push && git push --tags",
-    "prepublishOnly": "yarn clean && yarn build:once && yarn publish:preview && cli-confirm \"Do you really want to release a new version? Please check the files that will be publicly released first.\"",
+    "prepublishOnly": "yarn clean && yarn build:once && yarn publish:preview && cli-confirm \"Do you really want to release a new version? Please check the files that will be publicly released first. (y/n)\"",
     "publish:preview": "npm pack && tar -xvzf *.tgz && rm -rf package *.tgz",
     "release": "yarn bump --prompt --commit --tag --push",
     "releaseAndPublish": "yarn release && npm publish",
