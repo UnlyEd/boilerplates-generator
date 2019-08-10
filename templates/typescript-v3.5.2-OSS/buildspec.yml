@@ -15,6 +15,9 @@ phases:
     commands:
       - yarn --production=false # Install devDependencies (to run tests) - See https://yarnpkg.com/lang/en/docs/cli/install/#toc-yarn-install-production-true-false
       - yarn global add @unly/slack-codebuild
+      - echo Installing codebuild-extras... # Install and execute aws-codebuild-extra, which adds env variables necessary on CodeBuild (including some for CodeClimate)
+      - curl -fsSL https://raw.githubusercontent.com/UnlyEd/aws-codebuild-extras/master/install >> extras.sh
+      - . ./extras.sh
 
   # See https://github.com/codeclimate/test-reporter/issues/379 for additional info regarding how to setup CodeBuild with CodeClimate
   pre_build:
