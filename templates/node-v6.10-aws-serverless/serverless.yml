@@ -5,7 +5,7 @@ frameworkVersion: "=1.39.1"
 plugins:
   - serverless-webpack # Must be first, see https://github.com/99xt/serverless-dynamodb-local#using-with-serverless-offline-and-serverless-webpack-plugin
 #  - serverless-sentry # https://github.com/arabold/serverless-sentry-plugin
-  - '@jimdo/serverless-dotenv' # See https://github.com/Jimdo/serverless-dotenv
+  - '@unly/serverless-env-copy-plugin' # See https://github.com/UnlyEd/serverless-env-copy-plugin
   - serverless-offline
 #  - serverless-domain-manager # See https://github.com/amplify-education/serverless-domain-manager
 
