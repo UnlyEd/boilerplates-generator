@@ -5,6 +5,7 @@ This project was generated using https://github.com/UnlyEd/boilerplate-generator
 <!-- toc -->
 
 - [TODO (after generating a project from this boilerplate)](#todo-after-generating-a-project-from-this-boilerplate)
+- [Features/defaults provided by this boilerplate](#featuresdefaults-provided-by-this-boilerplate)
 - [Getting started](#getting-started)
   * [Install](#install)
   * [Use](#use)
@@ -12,7 +13,6 @@ This project was generated using https://github.com/UnlyEd/boilerplate-generator
   * [Logs](#logs)
   * [Test](#test)
   * [Release](#release)
-- [Features/defaults provided by this boilerplate](#featuresdefaults-provided-by-this-boilerplate)
 
 <!-- tocstop -->
 
@@ -47,6 +47,10 @@ This project was generated using https://github.com/UnlyEd/boilerplate-generator
 - Enable API GW logs by default
 
 ## Getting started
+
+### Clone this boilerplate
+
+See [instructions](../../README.md#usage)
 
 ### Install
 
