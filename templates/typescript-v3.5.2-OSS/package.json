@@ -61,7 +61,7 @@
     "eslint-plugin-import": "2.14",
     "eslint-watch": "4.0.2",
     "jest": "24.8.0",
-    "jsdoc-to-markdown": "4.0.1",
+    "jsdoc-to-markdown": "5.0.0",
     "markdown-toc": "1.2.0",
     "ts-jest": "24.0.2",
     "typescript": "3.5.2",
