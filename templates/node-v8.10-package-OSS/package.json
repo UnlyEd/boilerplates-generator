@@ -38,7 +38,9 @@
     "doc:toc": "yarn markdown-toc --maxdepth 4 -i README.md",
     "test": "NODE_ENV=test jest --watch",
     "test:once": "NODE_ENV=test jest",
-    "test:coverage": "NODE_ENV=test jest --coverage"
+    "test:coverage": "NODE_ENV=test jest --coverage",
+    "snyk-protect": "snyk protect",
+    "prepare": "yarn run snyk-protect"
   },
   "devDependencies": {
     "@babel/cli": "7.2.3",
@@ -46,7 +48,7 @@
     "@babel/preset-env": "7.2.3",
     "@unly/cli-confirm": "1.1.1",
     "babel-core": "7.0.0-bridge.0",
-    "babel-jest": "21.2.0",
+    "babel-jest": "24.0.0",
     "babel-loader": "8.0.5",
     "babel-preset-es2015-rollup": "3.0.0",
     "concurrently": "4.1.0",
@@ -55,14 +57,18 @@
     "eslint-config-airbnb-base": "13.1.0",
     "eslint-plugin-import": "2.14",
     "eslint-watch": "4.0.2",
-    "jest": "21.2.1",
-    "jsdoc-to-markdown": "4.0.1",
+    "jest": "24.0.0",
+    "jsdoc-to-markdown": "5.0.0",
     "markdown-toc": "1.2.0",
     "rollup": "1.1.2",
     "rollup-plugin-babel": "4.3.2",
     "rollup-plugin-commonjs": "9.2.0",
     "rollup-plugin-node-resolve": "4.0.0",
     "version-bump-prompt": "4.2.2",
-    "webpack": "3.12.0"
+    "webpack": "4.0.0"
+  },
+  "snyk": true,
+  "dependencies": {
+    "snyk": "^1.248.0"
   }
 }
