@@ -24,6 +24,10 @@ This project was generated using https://github.com/UnlyEd/boilerplate-generator
 
 ## Getting started
 
+## Clone this boilerplate
+
+See [instructions](../../README.md#usage)
+
 ```
 yarn install
 ```

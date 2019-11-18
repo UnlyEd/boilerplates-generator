@@ -22,6 +22,10 @@ This project was generated using https://github.com/UnlyEd/boilerplate-generator
 
 <!-- tocstop -->
 
+## Clone this boilerplate
+
+See [instructions](../../README.md#usage)
+
 ## TODO (after generating a project from this boilerplate)
 
 - Rename occurrences of `PROJECT-NAME`

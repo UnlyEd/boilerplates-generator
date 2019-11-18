@@ -4,7 +4,10 @@
     <content url="file://$MODULE_DIR$">
       <excludeFolder url="file://$MODULE_DIR$/.tmp" />
       <excludeFolder url="file://$MODULE_DIR$/temp" />
+      <excludeFolder url="file://$MODULE_DIR$/templates/next-typescript-API/.github" />
+      <excludeFolder url="file://$MODULE_DIR$/templates/next-typescript-API/.next" />
       <excludeFolder url="file://$MODULE_DIR$/templates/node-v10.x-aws-serverless-with-serverless-bundle/.serverless" />
+      <excludeFolder url="file://$MODULE_DIR$/templates/node-v10.x-aws-serverless-with-serverless-bundle/.webpack" />
       <excludeFolder url="file://$MODULE_DIR$/templates/node-v10.x-aws-serverless-with-serverless-bundle/coverage" />
       <excludeFolder url="file://$MODULE_DIR$/templates/node-v10.x-aws-serverless/.serverless" />
       <excludeFolder url="file://$MODULE_DIR$/templates/node-v10.x-aws-serverless/.webpack" />
