@@ -132,7 +132,7 @@ Usage:
 
 ---
 
-**[ABOUT UNLY]**
+# **[ABOUT UNLY]** <a href="https://unly.org"><img src="https://storage.googleapis.com/unly/images/ICON_UNLY.png" height="100"/></a>
 
 > [Unly](https://unly.org) is a socially responsible company, fighting inequality and facilitating access to higher education. 
 > Unly is committed to making education more inclusive, through responsible funding for students. 
@@ -143,7 +143,9 @@ We proudly participate in many TechForGood initiatives. To support and learn mor
 - https://twitter.com/UnlyEd
 - https://www.facebook.com/UnlyEd/
 
+Tech tips and tricks from our CTO on our [Medium page](https://medium.com/unly-org/tech/home)!
+
 #TECHFORGOOD #EDUCATIONFORALL
 
 
-[![Unly](https://storage.googleapis.com/unly/images/LOGO_UNLY.png)](https://unly.org)
+
