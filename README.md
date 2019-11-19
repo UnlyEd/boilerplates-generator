@@ -133,7 +133,7 @@ Usage:
 
 ---
 
-# **[ABOUT UNLY]** <a href="https://unly.org"><img src="https://storage.googleapis.com/unly/images/ICON_UNLY.png" height="45" align="right" /></a>
+# **[ABOUT UNLY]** <a href="https://unly.org"><img src="https://storage.googleapis.com/unly/images/ICON_UNLY.png" height="40" align="right" /></a>
 
 > [Unly](https://unly.org) is a socially responsible company, fighting inequality and facilitating access to higher education. 
 > Unly is committed to making education more inclusive, through responsible funding for students. 
