@@ -1,3 +1,4 @@
+<a href="https://unly.org"><img src="https://storage.googleapis.com/unly/images/ICON_UNLY.png" height="20"/></a>
 [![Maintainability](https://api.codeclimate.com/v1/badges/73c7f933ea88c7f1c239/maintainability)](https://codeclimate.com/github/UnlyEd/boilerplates-generator/maintainability)
 
 # Boilerplates generator
@@ -132,7 +133,7 @@ Usage:
 
 ---
 
-# **[ABOUT UNLY]** <a href="https://unly.org"><img src="https://storage.googleapis.com/unly/images/ICON_UNLY.png" height="100"/></a>
+# **[ABOUT UNLY]** <a href="https://unly.org"><img src="https://storage.googleapis.com/unly/images/ICON_UNLY.png" height="23"/></a>
 
 > [Unly](https://unly.org) is a socially responsible company, fighting inequality and facilitating access to higher education. 
 > Unly is committed to making education more inclusive, through responsible funding for students. 
