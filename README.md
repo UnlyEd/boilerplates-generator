@@ -133,6 +133,23 @@ Usage:
 
 ---
 
+# Vulnerability disclosure
+
+[See our policy](https://github.com/UnlyEd/Unly).
+
+---
+
+# Contributors and maintainers
+
+This project is being maintained by:
+- [Unly] Ambroise Dhenain ([Vadorequest](https://github.com/vadorequest)) **(active)**
+
+Thanks to our contributors:
+- Anthony Troupenat ([Fukoyamashisu](https://github.com/Fukoyamashisu))
+- Hugo Martin ([Demmonius](https://github.com/Demmonius))
+
+---
+
 # **[ABOUT UNLY]** <a href="https://unly.org"><img src="https://storage.googleapis.com/unly/images/ICON_UNLY.png" height="40" align="right" alt="Unly logo" title="Unly logo" /></a>
 
 > [Unly](https://unly.org) is a socially responsible company, fighting inequality and facilitating access to higher education. 
@@ -149,6 +166,3 @@ We proudly participate in many TechForGood initiatives. To support and learn mor
 Tech tips and tricks from our CTO on our [Medium page](https://medium.com/unly-org/tech/home)!
 
 #TECHFORGOOD #EDUCATIONFORALL
-
-
-
