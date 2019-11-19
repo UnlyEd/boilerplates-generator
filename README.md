@@ -143,6 +143,8 @@ We provide technological solutions to help students find the necessary funding f
 We proudly participate in many TechForGood initiatives. To support and learn more about our actions to make education accessible, visit : 
 - https://twitter.com/UnlyEd
 - https://www.facebook.com/UnlyEd/
+- https://www.linkedin.com/company/unly
+- [Interested to work with us?](https://jobs.zenploy.io/unly/about)
 
 Tech tips and tricks from our CTO on our [Medium page](https://medium.com/unly-org/tech/home)!
 
