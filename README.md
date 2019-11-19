@@ -139,7 +139,7 @@ Usage:
 
 We provide technological solutions to help students find the necessary funding for their studies. 
 
-We proudly participate in many TechForGood initiatives. To support and learn more about our actions to make education accessible : 
+We proudly participate in many TechForGood initiatives. To support and learn more about our actions to make education accessible, visit : 
 - https://twitter.com/UnlyEd
 - https://www.facebook.com/UnlyEd/
 
