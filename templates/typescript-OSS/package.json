@@ -17,7 +17,7 @@
     "release": "yarn bump --prompt --commit --tag --push",
     "releaseAndPublish": "yarn release && npm publish",
     "doc:toc": "yarn markdown-toc --maxdepth 4 -i README.md",
-    "test": "NODE_ENV=test jest --watch",
+    "test": "NODE_ENV=test jest --watchAll",
     "test:once": "NODE_ENV=test jest",
     "test:coverage": "NODE_ENV=test jest --coverage"
   },
