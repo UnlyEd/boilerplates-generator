@@ -77,7 +77,7 @@ Templates meant to be used to release open source packages (marked as "OSS") com
 > This template can be used to get started quickly with a node.js package meant to be released as open source package (OSS license), using TypeScript.
 > It includes utilities meant to help to release/publish versions to NPM.
 
-[Go to template](./templates/typescript-v3.5.2-OSS)
+[Go to template](templates/typescript-OSS)
 
 ### - node-v8.10-package-OSS
 

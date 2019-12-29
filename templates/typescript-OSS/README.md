@@ -1,6 +1,6 @@
 # PROJECT-NAME
 
-This project was generated using https://github.com/UnlyEd/boilerplate-generator/tree/master/templates/typescript-v3.5.2-OSS
+This project was generated using https://github.com/UnlyEd/boilerplate-generator/tree/master/templates/typescript-OSS
 
 <!-- toc -->
 
@@ -31,10 +31,6 @@ Use:
 ```
 yarn start
 ```
-
-## API
-
-[API](./API.md)
 
 ---
 
