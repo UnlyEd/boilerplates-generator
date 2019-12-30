@@ -2,6 +2,8 @@
 
 This project was generated using https://github.com/UnlyEd/boilerplate-generator/tree/master/templates/typescript-OSS
 
+---
+
 <!-- toc -->
 
 - [TODO (after generating a project from this boilerplate)](#todo-after-generating-a-project-from-this-boilerplate)
@@ -14,6 +16,8 @@ This project was generated using https://github.com/UnlyEd/boilerplate-generator
 - [License](#license)
 
 <!-- tocstop -->
+
+---
 
 ## TODO (after generating a project from this boilerplate)
 
