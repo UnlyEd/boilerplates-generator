@@ -1,6 +1,6 @@
 # PROJECT-NAME
 
-This project was generated using https://github.com/UnlyEd/boilerplate-generator/tree/master/templates/typescript-OSS
+> Project's description
 
 ---
 
@@ -62,6 +62,18 @@ yarn test:once
 yarn test:coverage
 ```
 
+### Versions
+
+#### SemVer
+
+We use Semantic Versioning for this project: https://semver.org/. (`vMAJOR.MINOR.PATCH`: `v1.0.1`)
+
+- Major version: Must be changed when Breaking Changes are made (public API isn't backward compatible).
+  - A function has been renamed/removed from the public API
+  - Something has changed that will cause the app to behave differently with the same configuration
+- Minor version: Must be changed when a new feature is added or updated (without breaking change nor behavioral change)
+- Patch version: Must be changed when any change is made that isn't either Major nor Minor. (Misc, doc, etc.)
+
 ### Releasing and publishing
 
 ```
@@ -71,6 +83,16 @@ yarn release # Will prompt for bump version, commit, create git tag, push commit
 npm publish # Will publish to NPM
 ```
 
+> Don't forget we are using SemVer, please follow our SemVer rules.
+
+**Pro hint**: use `beta` tag if you're in a work-in-progress (or unsure) to avoid releasing WIP versions that looks legit
+
+---
+
 ## License
 
 MIT
+
+---
+
+> This project was generated using https://github.com/UnlyEd/boilerplate-generator/tree/master/templates/typescript-OSS
