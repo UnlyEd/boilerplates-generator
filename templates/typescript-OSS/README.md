@@ -89,6 +89,14 @@ npm publish # Will publish to NPM
 
 ---
 
+## Changelog
+
+> Our API change (including breaking changes and "how to migrate") are documented in the Changelog.
+
+See [changelog](./CHANGELOG.md)
+
+---
+
 ## License
 
 MIT
