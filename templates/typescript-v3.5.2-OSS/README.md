@@ -1,9 +1,9 @@
 <a href="https://unly.org"><img src="https://storage.googleapis.com/unly/images/ICON_UNLY.png" align="right" height="20" alt="Unly logo" title="Unly logo" /></a>
-
-[![Version][npm-version-image]][npm-version-url] [![License][npm-license-image]][npm-license-url] [![Downloads][npm-downloads-image]][npm-downloads-url] [![Deps][npm-deps-image]][npm-deps-url] [![DevDeps][npm-devdeps-image]][npm-devdeps-url]
-[![Known Vulnerabilities](https://snyk.io/test/github/UnlyEd/PROJECT-NAME/badge.svg?targetFile=package.json)](https://snyk.io/test/github/UnlyEd/iso3166-1?targetFile=package.json)
-
 # PROJECT-NAME
+[![Version][github-version-image]][github-version-url]
+[![Liscence][github-liscence-image]][github-liscence-url][![Releases][github-all-release-image]][github-all-release-url][![NPM Downloads][npm-downloads-image]][npm-downloads-url]
+[![CC Maintainability][code-climate-maintainability-image]][code-climate-maintainability-url][![CC Issues][code-climate-issues-image]][code-climate-issues-url][![CC debt][code-climate-debt-image]][code-climate-debt-url]
+[![Known Vulnerabilities](https://snyk.io/test/github/UnlyEd/iso3166-1/badge.svg?targetFile=package.json)](https://snyk.io/test/github/UnlyEd/iso3166-1?targetFile=package.json)
 
 This project was generated using https://github.com/UnlyEd/boilerplate-generator/tree/master/templates/typescript-v3.5.2-OSS
 
@@ -79,3 +79,18 @@ npm publish # Will publish to NPM
 ## License
 
 MIT
+
+[github-all-release-image]: https://img.shields.io/github/downloads/UnlyEd/PROJECT-NAME/total
+[github-all-release-url]: https://github.com/UnlyEd/PROJECT-NAME/releases
+[github-liscence-image]: https://img.shields.io/github/license/UnlyEd/PROJECT-NAME
+[github-liscence-url]: ./LICENSE
+[github-version-image]: https://img.shields.io/github/package-json/v/UnlyEd/PROJECT-NAME
+[github-version-url]: ./package.json
+[npm-downloads-url]: https://www.npmjs.com/package/@unly/iso3166-1
+[npm-downloads-image]: https://img.shields.io/npm/dm/@unly/PROJECT-NAME
+[code-climate-maintainability-image]: https://img.shields.io/codeclimate/maintainability/unlyed/PROJECT-NAME
+[code-climate-maintainability-url]: https://codeclimate.com/github/UnlyEd/PROJECT-NAME/maintainability
+[code-climate-issues-image]: https://img.shields.io/codeclimate/issues/UnlyEd/PROJECT-NAME
+[code-climate-issues-url]: https://codeclimate.com/github/UnlyEd/PROJECT-NAME/issues
+[code-climate-debt-image]: https://img.shields.io/codeclimate/tech-debt/UnlyEd/PROJECT-NAME
+[code-climate-debt-url]: https://codeclimate.com/github/UnlyEd/PROJECT-NAME/maintainability
