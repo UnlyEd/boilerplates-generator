@@ -1,3 +1,8 @@
+<a href="https://unly.org"><img src="https://storage.googleapis.com/unly/images/ICON_UNLY.png" align="right" height="20" alt="Unly logo" title="Unly logo" /></a>
+
+[![Version][npm-version-image]][npm-version-url] [![License][npm-license-image]][npm-license-url] [![Downloads][npm-downloads-image]][npm-downloads-url] [![Deps][npm-deps-image]][npm-deps-url] [![DevDeps][npm-devdeps-image]][npm-devdeps-url]
+[![Known Vulnerabilities](https://snyk.io/test/github/UnlyEd/PROJECT-NAME/badge.svg?targetFile=package.json)](https://snyk.io/test/github/UnlyEd/iso3166-1?targetFile=package.json)
+
 # PROJECT-NAME
 
 This project was generated using https://github.com/UnlyEd/boilerplate-generator/tree/master/templates/typescript-v3.5.2-OSS
