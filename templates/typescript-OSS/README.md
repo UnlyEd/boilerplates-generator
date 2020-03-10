@@ -6,7 +6,7 @@
 [![CC Maintainability][code-climate-maintainability-image]][code-climate-maintainability-url][![CC Issues][code-climate-issues-image]][code-climate-issues-url][![CC debt][code-climate-debt-image]][code-climate-debt-url]
 [![Known Vulnerabilities](https://snyk.io/test/github/UnlyEd/iso3166-1/badge.svg?targetFile=package.json)](https://snyk.io/test/github/UnlyEd/iso3166-1?targetFile=package.json)
 
-This project was generated using https://github.com/UnlyEd/boilerplate-generator/tree/master/templates/typescript-v3.5.2-OSS
+> This project was generated using https://github.com/UnlyEd/boilerplate-generator/tree/master/templates/typescript-OSS
 
 ---
 
