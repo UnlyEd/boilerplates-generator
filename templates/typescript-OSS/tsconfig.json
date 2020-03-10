@@ -26,7 +26,6 @@
     "removeComments": true
   },
   "include": [
-    "typings/**/*",
     "src/**/*"
   ],
   "exclude": [
