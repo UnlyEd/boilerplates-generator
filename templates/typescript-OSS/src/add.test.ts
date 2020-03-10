@@ -1,4 +1,4 @@
-import { add } from './index';
+import { add } from './add';
 
 describe('src/index', () => {
   describe('add should', () => {

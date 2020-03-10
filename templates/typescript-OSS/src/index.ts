@@ -1,3 +1,7 @@
-export const add = (a: number, b: number): number => {
-  return a + b;
-};
+import { add } from './add';
+import { subtract } from './subtract';
+
+export default {
+  add,
+  subtract,
+}
