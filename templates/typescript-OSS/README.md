@@ -11,11 +11,13 @@ This project was generated using https://github.com/UnlyEd/boilerplate-generator
 
 - [TODO (after generating a project from this boilerplate)](#todo-after-generating-a-project-from-this-boilerplate)
 - [Getting started](#getting-started)
-- [API](#api)
 - [Contributing](#contributing)
-  * [Getting started](#getting-started-1)
+  * [Working locally](#working-locally)
   * [Test](#test)
+  * [Versions](#versions)
+    + [SemVer](#semver)
   * [Releasing and publishing](#releasing-and-publishing)
+- [Changelog](#changelog)
 - [License](#license)
 - [Vulnerability disclosure](#vulnerability-disclosure)
 - [Contributors and maintainers](#contributors-and-maintainers)
@@ -25,12 +27,12 @@ This project was generated using https://github.com/UnlyEd/boilerplate-generator
 
 ---
 
-## TODO (after generating a project from this boilerplate)
+# TODO (after generating a project from this boilerplate)
 
 - Rename occurrences of `PROJECT-NAME`
 - Delete this
 
-## Getting started
+# Getting started
 
 ```
 yarn install
@@ -44,11 +46,11 @@ yarn start
 
 ---
 
-## Contributing
+# Contributing
 
 We gladly accept PRs, but please open an issue first so we can discuss it beforehand.
 
-### Working locally
+## Working locally
 
 ```
 yarn start # Shortcut - Runs linter + build + tests in concurrent mode (watch mode)
@@ -60,7 +62,7 @@ yarn build
 yarn test
 ```
 
-### Test
+## Test
 
 ```
 yarn test # Run all tests, interactive and watch mode
@@ -68,9 +70,9 @@ yarn test:once
 yarn test:coverage
 ```
 
-### Versions
+## Versions
 
-#### SemVer
+### SemVer
 
 We use Semantic Versioning for this project: https://semver.org/. (`vMAJOR.MINOR.PATCH`: `v1.0.1`)
 
@@ -80,7 +82,7 @@ We use Semantic Versioning for this project: https://semver.org/. (`vMAJOR.MINOR
 - Minor version: Must be changed when a new feature is added or updated (without breaking change nor behavioral change)
 - Patch version: Must be changed when any change is made that isn't either Major nor Minor. (Misc, doc, etc.)
 
-### Releasing and publishing
+## Releasing and publishing
 
 ```
 yarn releaseAndPublish # Shortcut - Will prompt for bump version, commit, create git tag, push commit/tag and publish to NPM
@@ -95,7 +97,7 @@ npm publish # Will publish to NPM
 
 ---
 
-## Changelog
+# Changelog
 
 > Our API change (including breaking changes and "how to migrate") are documented in the Changelog.
 
@@ -103,7 +105,7 @@ See [changelog](./CHANGELOG.md)
 
 ---
 
-## License
+# License
 
 MIT
 
