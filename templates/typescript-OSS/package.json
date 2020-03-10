@@ -15,7 +15,7 @@
     "postversion": "git add README.md CHANGELOG.md && git commit --amend --no-edit && git push && git push --tags",
     "prepublishOnly": "yarn clean && yarn build:once && yarn publish:preview && cli-confirm \"Do you really want to release a new version? Please check the files that will be publicly released first. (y/n)\"",
     "publish:preview": "npm pack && tar -xvzf *.tgz && rm -rf package *.tgz",
-    "release": "yarn bump --prompt --commit --tag",
+    "release": "yarn bump --commit --tag",
     "releaseAndPublish": "yarn release && npm publish",
     "doc:toc": "yarn markdown-toc --maxdepth 4 -i README.md",
     "test": "NODE_ENV=test jest --watchAll",
@@ -52,7 +52,7 @@
     "@babel/preset-typescript": "7.3.3",
     "@types/jest": "24.0.25",
     "@types/lodash": "4.14.149",
-    "@types/node": "13.1.1",
+    "@types/node": "13.9.0",
     "@typescript-eslint/eslint-plugin": "2.13.0",
     "@typescript-eslint/parser": "2.13.0",
     "@unly/cli-confirm": "1.1.1",
@@ -60,16 +60,14 @@
     "concurrently": "4.1.0",
     "cross-env": "5.2.0",
     "eslint": "6.8.0",
-    "eslint-config-airbnb-base": "14.0.0",
     "eslint-plugin-import": "2.19.1",
     "eslint-plugin-jest": "23.2.0",
     "eslint-watch": "6.0.1",
     "jest": "24.9.0",
-    "jsdoc-to-markdown": "5.0.3",
     "markdown-toc": "1.2.0",
     "ts-jest": "24.2.0",
-    "typescript": "3.7.4",
-    "version-bump-prompt": "4.2.2"
+    "typescript": "3.8.3",
+    "version-bump-prompt": "6.0.2"
   }
 }
 
